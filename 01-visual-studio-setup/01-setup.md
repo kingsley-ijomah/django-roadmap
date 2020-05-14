@@ -26,3 +26,28 @@ https://kite.com/
 
 download and install kite copilot and run it
 https://kite.com/download/
+
+### create .vscode
+- in root of project create .vscode folder
+- within it create settings.json
+
+### contents for .vcode/settings.json
+`
+{
+    "python.pythonPath": "/Users/kingsley/.pyenv/versions/3.8.0/bin/python",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "python.linting.pycodestyleEnabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintPath": "pylint",
+    "python.linting.pylintArgs": ["--load-plugins", "pylint_django"],
+    "python.linting.pydocstyleArgs": ["--ignore=E501"],
+    "files.exclude": {
+      "**/*.pyc": true,
+      "**/env": true
+    }
+}
+`
+### read about settings here:
+https://code.visualstudio.com/docs/getstarted/settings
+https://code.visualstudio.com/docs/python/linting#_enable-linters
