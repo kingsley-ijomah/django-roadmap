@@ -24,7 +24,7 @@ https://code.visualstudio.com/docs/?dv=osx
 - install HTML CSS Support
 - install Live Sass Compiler
 - install Live Server
-
+- install Visual Studio Live Share
 
 ---
 
