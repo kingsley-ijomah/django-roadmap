@@ -19,6 +19,12 @@ https://code.visualstudio.com/docs/?dv=osx
 - install Prettier code formatter
 - install kite autocomplete
 - install Bracket Pair Colorizer
+- install Auto Rename Tag
+- install CSS Peek
+- install HTML CSS Support
+- install Live Sass Compiler
+- install Live Server
+
 
 ---
 
