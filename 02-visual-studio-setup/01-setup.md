@@ -1,4 +1,5 @@
 ## setup visual studio code
+
 Below we are going to configure editor for django
 
 Download the editor:
@@ -10,12 +11,14 @@ https://code.visualstudio.com/docs/?dv=osx
 ---
 
 ### install extensions
+
 - click on extension within VSC (visual studio code)
 - install python
 - install Django Templates and backend snipets
 - install Django Template language support
 - install Prettier code formatter
 - install kite autocomplete
+- install Bracket Pair Colorizer
 
 ---
 
@@ -28,26 +31,15 @@ download and install kite copilot and run it
 https://kite.com/download/
 
 ### create .vscode
+
 - in root of project create .vscode folder
 - within it create settings.json
 
 ### contents for .vcode/settings.json
-`
-{
-    "python.pythonPath": "/Users/kingsley/.pyenv/versions/3.8.0/bin/python",
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": true,
-    "python.linting.pycodestyleEnabled": true,
-    "python.linting.pylintEnabled": true,
-    "python.linting.pylintPath": "pylint",
-    "python.linting.pylintArgs": ["--load-plugins", "pylint_django"],
-    "python.linting.pydocstyleArgs": ["--ignore=E501"],
-    "files.exclude": {
-      "**/*.pyc": true,
-      "**/env": true
-    }
-}
-`
+
+`{ "python.pythonPath": "/Users/kingsley/.pyenv/versions/3.8.0/bin/python", "editor.formatOnSave": true, "editor.formatOnPaste": true, "python.linting.pycodestyleEnabled": true, "python.linting.pylintEnabled": true, "python.linting.pylintPath": "pylint", "python.linting.pylintArgs": ["--load-plugins", "pylint_django"], "python.linting.pydocstyleArgs": ["--ignore=E501"], "python.venvPath": "/Users/kingsley/.local/share/virtualenvs/PROJECT-NAME-HERE/bin/python", "files.exclude": { "**/*.pyc": true, "**/env": true } }`
+
 ### read about settings here:
+
 https://code.visualstudio.com/docs/getstarted/settings
 https://code.visualstudio.com/docs/python/linting#_enable-linters
