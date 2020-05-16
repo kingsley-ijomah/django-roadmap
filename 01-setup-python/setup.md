@@ -1,23 +1,35 @@
-### install python
+## install python
 
-## get latest python
+### get latest python
+
 http://stackoverflow.com/questions/18671253/how-can-i-use-homebrew-to-install-both-python-2-and-3-on-mac
 
 brew install pyenv
 pyenv install 3.8.1
 
-## put this in .zshrc
+### put this in .zshrc
+
+```
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+```
 
+### check versions and set global
 
-## check versions and set global
 pyenv versions
 
-## set global
+### set global
+
 pyenv global 3.8.1
 python --version
 
-## install env
+### install env
+
 pip install env
+
+### install pipenv
+
+arguement for pipenv: [realpython/pipenv-guide](https://realpython.com/pipenv-guide/)
+
+pip install pipenv
