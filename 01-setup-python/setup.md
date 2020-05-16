@@ -23,13 +23,3 @@ pyenv versions
 
 pyenv global 3.8.1
 python --version
-
-### install env
-
-pip install env
-
-### install pipenv
-
-arguement for pipenv: [realpython/pipenv-guide](https://realpython.com/pipenv-guide/)
-
-pip install pipenv

@@ -43,9 +43,28 @@ https://kite.com/download/
 
 ### contents for .vcode/settings.json
 
-`{ "python.pythonPath": "/Users/kingsley/.pyenv/versions/3.8.0/bin/python", "editor.formatOnSave": true, "editor.formatOnPaste": true, "python.linting.pycodestyleEnabled": true, "python.linting.pylintEnabled": true, "python.linting.pylintPath": "pylint", "python.linting.pylintArgs": ["--load-plugins", "pylint_django"], "python.linting.pydocstyleArgs": ["--ignore=E501"], "python.venvPath": "/Users/kingsley/.local/share/virtualenvs/PROJECT-NAME-HERE/bin/python", "files.exclude": { "**/*.pyc": true, "**/env": true } }`
+```
+{
+  "python.pythonPath": "/Users/kingsley/.pyenv/versions/3.8.0/bin/python",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "python.linting.pycodestyleEnabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.pylintPath": "pylint",
+  "python.linting.pylintArgs": ["--load-plugins", "pylint_django"],
+  "python.linting.pydocstyleArgs": ["--ignore=E501"],
+  "python.venvPath": "/Users/kingsley/.local/share/virtualenvs/PROJECT-NAME-HERE/bin/python",
+  "files.exclude": { "**/*.pyc": true, "**/env": true }
+}
+```
 
 ### read about settings here:
 
 https://code.visualstudio.com/docs/getstarted/settings
 https://code.visualstudio.com/docs/python/linting#_enable-linters
+
+### launch VSCode from terminal using `code` keyword
+
+- Launch VS Code.
+- Open the Command Palette (⇧⌘P) and type 'shell command'
+- Restart the terminal for the new \$PATH value to take effect.
