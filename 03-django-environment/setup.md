@@ -12,7 +12,7 @@ pipenv shell
 
 ### install django
 
-pipenv install django
+pipenv install django==3.0.6
 
 ### check installed packages
 
@@ -39,3 +39,11 @@ pipenv graph --reverse
 ### pipenv open a package
 
 pipenv open flask
+
+### uninstall package
+
+pipenv uninstall [package]
+
+### get path to virtual env
+
+pipenv --venv
