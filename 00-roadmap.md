@@ -1,3 +1,5 @@
+https://overiq.com/django-1-10/django-form-basics/
+
 ###Generate project
 
 - virtual env
