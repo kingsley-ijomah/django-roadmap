@@ -26,6 +26,7 @@ https://code.visualstudio.com/docs/?dv=osx
 - install Live Server
 - install Visual Studio Live Share
 - install HTML Boilerplate
+- install Material Theme
 
 ---
 
