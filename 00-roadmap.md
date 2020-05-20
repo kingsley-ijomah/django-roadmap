@@ -2,8 +2,9 @@ https://overiq.com/django-1-10/django-form-basics/
 
 ###Generate project
 
-- virtual env
-- pip install django
+- pip install pipenv
+- pipenv shell
+- pipenv install django
 - django-admin create project
 - python create app
 
