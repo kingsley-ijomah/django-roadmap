@@ -1,38 +1,37 @@
 ## Sample Project
 
 ### directory structure
-`
+
+```
 cd ~/desktop &&
 mkdir django-walkthrough &&
 cd django-walkthrough &&
-mkdir .vscode &&
-touch .vscode/settings.json &&
 mkdir src
-`
+code .
+```
 
 ---
 
 ## create virtual env
+
 > pwd -> django-walkthrough
-virtualenv venv
-
----
-
-## activagte virtual env
-source venv/bin/activate
+> pipenv shell
 
 ---
 
 ## install django into env
-pip list
-pip install django
+
+pipenv list
+pipenv install django
 
 ---
 
 ## start a new project
+
 django-admin startproject code_sample .
 
 ---
 
-## start a new app 
+## start a new app
+
 python manage.py startapp users
