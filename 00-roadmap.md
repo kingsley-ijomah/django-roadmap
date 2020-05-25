@@ -1,3 +1,29 @@
+[DjangoFocus RoadMap]
+
+### General (One Time) Setup
+
+- Python & Env Setup
+- Code Editor (VS Code)
+- Virtual Env Setup
+- Summary
+- Quiz
+
+### Django Walkthrough
+
+- Django Project
+- Django App
+- Summary
+- Quiz
+
+### MTV + URLs
+
+- Models
+- Views
+- Template
+- URLs
+- Summary
+- Quiz
+
 https://overiq.com/django-1-10/django-form-basics/
 
 ###Generate project
