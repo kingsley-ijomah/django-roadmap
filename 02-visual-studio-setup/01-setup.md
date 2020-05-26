@@ -38,25 +38,32 @@ https://kite.com/
 download and install kite copilot and run it
 https://kite.com/download/
 
+### install flake8 for linting in vscode
+
+pip install flake8
+
 ### set vscode settings.json for user
 
 edit the settings file located below:
-~/Library/Application Support/Code/User/settings.json
+code ~/Library/Application\ Support/Code/User/settings.json
 
 ```
 {
   "python.pythonPath": "/Users/kingsley/.pyenv/versions/3.8.0/bin/python",
   "kite.showWelcomeNotificationOnStartup": false,
   "editor.formatOnSave": true,
-  "terminal.integrated.fontSize": 14,
-  "editor.fontSize": 14,
+  "terminal.integrated.fontSize": 13,
+  "editor.fontSize": 13,
   "editor.tabSize": 2,
+  "window.zoomLevel": 1,
+  "python.linting.enabled": true,
+  "python.linting.flake8Enabled": true,
+  // I had to disable pylint manually otherwise it was working in the background
+  // You only need one flake8 or pylint
+  "python.linting.pylintEnabled": false,
   "python.linting.pycodestyleEnabled": true,
-  "python.linting.pylintEnabled": true,
-  "python.linting.pylintPath": "pylint",
-  "python.linting.pylintArgs": ["--load-plugins", "pylint_django"],
   "python.linting.pydocstyleArgs": ["--ignore=E501"],
-  "files.exclude": { "\*\*/\*.pyc": true }
+  "workbench.colorTheme": "Material Theme High Contrast"
 }
 ```
 
