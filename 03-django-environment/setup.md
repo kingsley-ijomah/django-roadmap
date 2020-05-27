@@ -8,7 +8,10 @@ pip install pipenv
 
 ### start pipenv virtual environment shell
 
+pipenv ( list commands )
 pipenv shell
+exit
+pipenv --rm
 
 ### install django
 
