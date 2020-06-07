@@ -1,8 +1,8 @@
 ## install python
 
-### install pyenv
+### install brew and pyenv
 
-https://github.com/pyenv/pyenv#installation
+https://brew.sh/
 
 brew update
 brew install pyenv
@@ -20,8 +20,15 @@ pyenv install 3.8.2
 <!-- put pyenv path into shell -->
 <!-- put in shell to enable shims and autocompletion -->
 
-echo -e 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.zshrc
-echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n eval "\$(pyenv init -)"\nfi' >> ~/.zshrc
+```
+echo -e 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.zshrc`
+
+echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n eval "$(pyenv init -)"\nfi' >> ~/.zshrc
+```
+
+### refresh shell
+
+`exec "$SHELL"`
 
 ### check versions and set global
 

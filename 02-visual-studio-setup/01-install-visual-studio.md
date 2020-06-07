@@ -12,12 +12,14 @@ https://code.visualstudio.com/docs/?dv=osx
 
 ### install extensions
 
-- click on extension within VSC (visual studio code)
+click on extension within VSC (visual studio code)
+
 - install python
 - install Django Templates and backend snipets
 - install Django Template language support
 - install Prettier code formatter
 - install kite autocomplete
+- install HTML Boilerplate
 - install Bracket Pair Colorizer
 - install Auto Rename Tag
 - install CSS Peek
@@ -25,7 +27,6 @@ https://code.visualstudio.com/docs/?dv=osx
 - install Live Sass Compiler
 - install Live Server
 - install Visual Studio Live Share
-- install HTML Boilerplate
 - install Material Theme
 
 ---
@@ -38,10 +39,6 @@ https://kite.com/
 download and install kite copilot and run it
 https://kite.com/download/
 
-### install flake8 for linting in vscode
-
-pip install flake8
-
 ### set vscode settings.json for user
 
 edit the settings file located below:
@@ -49,21 +46,36 @@ code ~/Library/Application\ Support/Code/User/settings.json
 
 ```
 {
-  "python.pythonPath": "/Users/kingsley/.pyenv/versions/3.8.0/bin/python",
+  "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
+  "python.linting.pylintPath": "${workspaceFolder}/.venv/bin/pylint",
+  "python.linting.flake8Path": "${workspaceFolder}/.venv/bin/flake8",
+  "python.formatting.blackPath": "${workspaceFolder}/.venv/bin/black",
   "kite.showWelcomeNotificationOnStartup": false,
-  "editor.formatOnSave": true,
   "terminal.integrated.fontSize": 13,
   "editor.fontSize": 13,
   "editor.tabSize": 2,
   "window.zoomLevel": 1,
+  "terminal.integrated.cursorBlinking": true,
   "python.linting.enabled": true,
   "python.linting.flake8Enabled": true,
-  // I had to disable pylint manually otherwise it was working in the background
-  // You only need one flake8 or pylint
-  "python.linting.pylintEnabled": false,
-  "python.linting.pycodestyleEnabled": true,
-  "python.linting.pydocstyleArgs": ["--ignore=E501"],
-  "workbench.colorTheme": "Material Theme High Contrast"
+  "python.formatting.provider": "black",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "workbench.colorTheme": "Material Theme High Contrast",
+  "explorer.confirmDragAndDrop": false,
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "~/../css/"
+    }
+  ]
 }
 ```
 

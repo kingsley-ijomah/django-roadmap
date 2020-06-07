@@ -1,10 +1,17 @@
 ## setup environment
 
+https://sourcery.ai/blog/python-best-practices/
+
+### install pipx
+
+pip install --user pipx
+pipx ensurepath
+
 ### install pipenv
 
 arguement for pipenv: [realpython/pipenv-guide](https://realpython.com/pipenv-guide/)
 
-pip install pipenv
+pipx install pipenv
 
 ### start pipenv virtual environment shell
 
@@ -15,7 +22,7 @@ pipenv --rm
 
 ### install django
 
-pipenv install django==3.0.6
+pipenv install django==3.0.6 --dev
 
 ### check installed packages
 
